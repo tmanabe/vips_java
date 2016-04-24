@@ -18,6 +18,15 @@ by Radek Burget.
 
 [http://cssbox.sourceforge.net](http://cssbox.sourceforge.net "")
 
+
+Build
+-----
+```
+$ mkdir dest
+$ javac -cp "./lib/*" -d ./dest ./src/org/fit/vips/*.java
+$
+```
+
 Usage
 -----
 
