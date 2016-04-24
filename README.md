@@ -30,7 +30,10 @@ $
 Usage
 -----
 
+```
+$ java -cp "./lib/*:./dest" org.fit.vips.VipsTester <URL>
+```
+
 Just pass the URL of web page you want to analyze as argument to VipsTester class.
 
 Preferences of implementation can be changed also there.
-
