@@ -18,22 +18,25 @@ by Radek Burget.
 
 [http://cssbox.sourceforge.net](http://cssbox.sourceforge.net "")
 
+Compilation
+-----------
 
-Build
------
-```
-$ mkdir dest
-$ javac -cp "./lib/*" -d ./dest ./src/org/fit/vips/*.java
-$
-```
+This project uses Apache Maven. Compile it by running `mvn compile` or `mvn package` if you want to produce the JAR file.
+
+If you have used the `mvn compile` then run:
+
+``java -cp target/classes/ org.fit.vips.VipsTester``
+
+or if `mvn package`:
+
+``java -cp target/vips-java-*.jar org.fit.vips.VipsTester``
+
+to start the VipsTester.
 
 Usage
 -----
 
-```
-$ java -cp "./lib/*:./dest" org.fit.vips.VipsTester <URL>
-```
-
 Just pass the URL of web page you want to analyze as argument to VipsTester class.
 
 Preferences of implementation can be changed also there.
+
